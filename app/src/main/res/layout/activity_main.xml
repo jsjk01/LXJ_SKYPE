@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_weight="3"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/SkyPe_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/skype"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/todo"
+            android:layout_marginBottom="@dimen/default_size"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/SkyPe_btn"
+            android:text="@string/login"
+            android:textSize="@dimen/default_size"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"/>
+        
+        <Button
+            android:id="@+id/SkyPe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SkyPe_btn"
+            android:textSize="@dimen/default_size"
+            android:layout_above="@+id/MS_login"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_style"/>
+
+        <Button
+            android:id="@+id/MS_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/MS_btn"
+            android:textSize="@dimen/default_size"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/New_Account"
+            android:textSize="@dimen/default_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_signin"
+            android:layout_marginBottom="@dimen/default_size"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/qq"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/we_chat_colour"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/WeChat" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/google"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/qq" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/telegram"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/telegram" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ali_pay"
+                android:contentDescription="@string/ali_pay" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
